@@ -7,21 +7,18 @@ print('\n\t\t\t -- Calculo de Juros Simples --\n ')
 # Entrada
 
 # Capital ou Valor
-Capital = int(input('Informe Capital: '))
+capital = float(input('Informe Capital: '))
 
 # Taxa do Juros
-Taxa = int(input('Informe Taxa: '))
+taxa = float(input('Informe Taxa: '))
 
 # Prazo ou Tempo
-Prazo = int(input('Informe Prazo: '))
-
-#Porcentagem
-Porcentagem = int(input('Informe Porcentagem: '))
+prazo = int(input('Informe Prazo: '))
 
 # Processamento
 
-Juros = Capital * Taxa * Prazo / Porcentagem
+juros = capital * taxa * prazo / 100
 
 # Saída
 
-print(f' {Capital} * {Taxa} * {Prazo} / {Porcentagem} = {Juros}')
+print(f' {capital} * {taxa} * {prazo} / {100} = {juros}')
